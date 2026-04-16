@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KUAFÖR TUNCER Bay Bayan Gebetto Tasarım | Selçuklu Konya</title>
+  <meta name="description" content="KUAFÖR TUNCER Bay Bayan Gebetto Tasarım Konya Selçuklu'da saç boyama ve kuaförlük başta olmak üzere modern bakım deneyimi sunar." />
+  <meta property="og:title" content="KUAFÖR TUNCER Bay Bayan Gebetto Tasarım" />
+  <meta property="og:description" content="Konya Selçuklu'da kadın ve erkek bakımına modern premium yaklaşım." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#c9b08f" />
+  <style>
+    :root{
+      --bg:#0e0d0c;
+      --bg-soft:#161412;
+      --panel:#1b1816;
+      --card:rgba(255,255,255,.05);
+      --line:rgba(255,255,255,.11);
+      --text:#f4efe8;
+      --muted:#d2c7ba;
+      --gold:#c9b08f;
+      --gold-soft:#e3d3bb;
+      --bronze:#9f7a54;
+      --shadow:0 18px 58px rgba(0,0,0,.34);
+      --radius:26px;
+      --max:1220px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: "Manrope", system-ui, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(201,176,143,.12), transparent 28%),
+        radial-gradient(circle at 88% 12%, rgba(159,122,84,.10), transparent 24%),
+        linear-gradient(180deg, #0e0d0c 0%, #141211 44%, #0a0908 100%);
+      overflow-x:hidden;
+    }
+    body::before{
+      content:""; position:fixed; inset:0; pointer-events:none; opacity:.06;
+      background-image: radial-gradient(rgba(255,255,255,.9) .7px, transparent .7px);
+      background-size:16px 16px;
+      mask-image: radial-gradient(circle at center, black, transparent 76%);
+    }
+    h1,h2,h3,.serif{font-family:"Bodoni Moda", Georgia, serif}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(calc(100% - 32px), var(--max));margin:auto}
+
+    .progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:999;background:linear-gradient(90deg,var(--gold),var(--gold-soft));box-shadow:0 0 18px rgba(201,176,143,.48)}
+
+    .nav-wrap{position:fixed;top:14px;left:0;right:0;z-index:998;transition:transform .45s ease,opacity .45s ease}
+    .nav-hidden{transform:translateY(-130%);opacity:0}
+    nav{
+      width:min(calc(100% - 24px), 1140px);margin:auto;padding:14px 18px;
+      display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;
+      border:1px solid var(--line);border-radius:999px;background:rgba(12,10,9,.46);backdrop-filter:blur(18px);box-shadow:var(--shadow)
+    }
+    .brand{display:flex;align-items:center;gap:14px;white-space:nowrap}
+    .brand-mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(201,176,143,.35);background:radial-gradient(circle at 30% 30%, rgba(201,176,143,.22), rgba(255,255,255,.04));font-family:"Bodoni Moda",serif}
+    .brand-text{letter-spacing:.28em;text-transform:uppercase;font-size:.78rem;line-height:1.5}
+    .nav-links{display:flex;justify-content:center;gap:24px;color:var(--muted);font-size:.94rem}
+    .nav-links a{position:relative}
+    .nav-links a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:linear-gradient(90deg,var(--gold),transparent);transition:width .35s ease}
+    .nav-links a:hover::after{width:100%}
+    .nav-cta{padding:11px 18px;border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#16120f;font-weight:800;transition:transform .25s ease, box-shadow .25s ease;box-shadow:0 12px 30px rgba(201,176,143,.18)}
+    .nav-cta:hover{transform:translateY(-2px)}
+
+    .hero{min-height:100vh;display:grid;align-items:center;padding:132px 0 80px;position:relative;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 20%, rgba(201,176,143,.14), transparent 24%), radial-gradient(circle at 82% 24%, rgba(255,255,255,.06), transparent 18%), linear-gradient(140deg, rgba(255,255,255,.04), transparent 42%);will-change:transform}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);font-size:.86rem;letter-spacing:.12em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 18px rgba(201,176,143,.65)}
+    h1{font-size:clamp(3.2rem,7vw,6.3rem);line-height:.92;letter-spacing:.05em;margin:18px 0 16px;max-width:10ch}
+    .hero-copy p{color:var(--muted);font-size:1.06rem;line-height:1.85;max-width:62ch}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+    .btn{padding:15px 24px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;border:1px solid transparent;transition:all .28s ease}
+    .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#14110f;box-shadow:0 14px 34px rgba(201,176,143,.18)}
+    .btn-primary:hover{transform:translateY(-3px)}
+    .btn-outline{border-color:var(--line);background:rgba(255,255,255,.04);color:#fff}
+    .btn-outline:hover{border-color:rgba(201,176,143,.42);box-shadow:0 0 0 5px rgba(201,176,143,.06)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+    .stat{padding:20px;border-radius:22px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+    .stat strong{display:block;font-family:"Bodoni Moda",serif;font-size:1.9rem;letter-spacing:.08em}
+    .stat span{color:var(--muted);font-size:.94rem}
+
+    .hero-frame{
+      min-height:590px;position:relative;border-radius:34px;padding:26px;overflow:hidden;
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03)), #171412;
+      border:1px solid var(--line);box-shadow:var(--shadow)
+    }
+    .hero-frame::before{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.08);border-radius:28px;pointer-events:none}
+    .hero-main-visual{position:absolute;inset:26px 26px 190px 26px;border-radius:26px;overflow:hidden;background:linear-gradient(180deg, rgba(8,8,8,.1), rgba(8,8,8,.45)), url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80') center/cover}
+    .top-note{position:absolute;top:36px;right:36px;padding:14px 16px;border-radius:20px;background:rgba(10,9,8,.62);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(12px);max-width:210px}
+    .top-note strong{display:block;margin-bottom:6px}.top-note span{color:var(--muted);font-size:.92rem;line-height:1.55}
+    .hero-bottom{position:absolute;left:26px;right:26px;bottom:26px;display:grid;gap:14px}
+    .pill-row{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--muted);font-size:.88rem}
+
+    .divider{height:110px;position:relative;overflow:hidden;margin-top:-1px}
+    .divider svg{display:block;width:100%;height:100%}
+
+    section{padding:34px 0 96px;position:relative}
+    .section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:30px}
+    .kicker{letter-spacing:.28em;text-transform:uppercase;font-size:.8rem;color:var(--gold-soft);margin-bottom:10px}
+    .section-head h2{font-size:clamp(2.2rem,5vw,4rem);line-height:1;letter-spacing:.06em;margin:0}
+    .section-head p{max-width:610px;color:var(--muted);line-height:1.8;margin:0}
+
+    .card{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:var(--shadow);transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+    .card::before{content:"";position:absolute;inset:-1px auto auto -1px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle, rgba(201,176,143,.12), transparent 65%);pointer-events:none}
+    .card:hover{transform:translateY(-6px);border-color:rgba(201,176,143,.26);box-shadow:0 24px 60px rgba(0,0,0,.34)}
+    .icon{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(201,176,143,.18), rgba(255,255,255,.05));border:1px solid var(--line);margin-bottom:14px}
+    .card h3{margin:0 0 8px;font-size:1.16rem;letter-spacing:.04em}.card p{margin:0;color:var(--muted);line-height:1.75}
+
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .split-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .split-box{min-height:430px;border-radius:32px;padding:30px;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .split-box:first-child{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)), #171412}
+    .split-box:last-child{background:linear-gradient(180deg, rgba(201,176,143,.10), rgba(255,255,255,.02)), #171412}
+    .label{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid var(--line);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+    .split-box ul{padding-left:18px;color:var(--muted);line-height:2}
+    .line{width:110px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:20px 0}
+
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .service-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.service-tag{letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;color:var(--gold-soft)}
+
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .quote{font-family:"Bodoni Moda",serif;font-size:3rem;line-height:1;color:rgba(201,176,143,.52);margin-bottom:8px}
+    .reviewer{margin-top:16px;color:var(--gold-soft);font-size:.86rem;letter-spacing:.18em;text-transform:uppercase}
+
+    .gallery-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-auto-rows:220px;gap:18px}
+    .gallery-item{position:relative;overflow:hidden;border-radius:26px;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .gallery-item:nth-child(1){grid-row:span 2}
+    .gallery-item:nth-child(4){grid-column:span 2}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease,filter .45s ease}
+    .gallery-item::after{content:attr(data-label);position:absolute;left:16px;bottom:16px;padding:10px 14px;border-radius:999px;background:rgba(10,9,8,.58);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase}
+    .gallery-item:hover img{transform:scale(1.08);filter:saturate(1.05)}
+
+    .cta{padding:42px;border-radius:34px;border:1px solid var(--line);background:linear-gradient(120deg, rgba(201,176,143,.10), rgba(255,255,255,.03)), #171412;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .cta h2{font-size:clamp(2.2rem,4vw,4rem);line-height:1;margin:0 0 14px;letter-spacing:.06em}.cta p{max-width:720px;color:var(--muted);line-height:1.85;margin:0}
+    .cta-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+
+    .faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:18px}
+    .contact-row{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+    .contact-list{display:grid;gap:14px;margin-top:18px}
+    .map-wrap{overflow:hidden;border-radius:28px;border:1px solid var(--line);min-height:490px;box-shadow:var(--shadow)}
+    .map-wrap iframe{width:100%;height:100%;border:0;filter:grayscale(.15) contrast(1.04) saturate(.9)}
+
+    footer{padding:26px 0 92px;color:var(--muted)}
+    .footer-box{padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+
+    .floating-actions{position:fixed;right:18px;bottom:18px;display:grid;gap:12px;z-index:999}
+    .fab{height:56px;min-width:56px;padding:0 18px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(10,9,8,.72);border:1px solid var(--line);backdrop-filter:blur(14px);box-shadow:0 14px 34px rgba(0,0,0,.28);transition:transform .25s ease,border-color .25s ease}
+    .fab:hover{transform:translateY(-3px);border-color:rgba(201,176,143,.35)}
+    .fab strong{font-size:.92rem}
+
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .85s ease,transform .85s ease}.reveal.visible{opacity:1;transform:none}
+    .delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}.delay-4{transition-delay:.32s}
+
+    @media (max-width:1080px){
+      .hero-grid,.contact-grid,.split-grid{grid-template-columns:1fr}
+      .trust-grid{grid-template-columns:repeat(2,1fr)}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .reviews-grid{grid-template-columns:1fr 1fr}
+      .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+      .gallery-item:nth-child(4){grid-column:auto}
+    }
+    @media (max-width:760px){
+      nav{grid-template-columns:1fr auto;gap:10px;border-radius:24px;padding:12px 14px}
+      .nav-links{display:none}
+      .nav-cta{padding:10px 14px;font-size:.9rem}
+      .hero{min-height:auto;padding-top:106px}
+      h1{max-width:none}
+      .stats,.trust-grid,.services-grid,.reviews-grid,.gallery-grid,.faq-grid{grid-template-columns:1fr}
+      .gallery-grid{grid-auto-rows:220px}
+      .gallery-item:nth-child(1){grid-row:auto}
+      .section-head{flex-direction:column;align-items:flex-start}
+      .hero-frame{min-height:500px;padding:18px}
+      .hero-main-visual{inset:18px 18px 182px 18px}
+      .top-note{top:20px;left:20px;right:20px;max-width:none}
+      .cta{padding:28px}
+      .fab strong{display:none}
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "KUAFÖR TUNCER Bay & Bayan & Gebetto Tasarım",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Feritpaşa, Y. Müh. Ümit Bahadır Türk Sk.",
+      "addressLocality": "Selçuklu",
+      "addressRegion": "Konya",
+      "postalCode": "42060",
+      "addressCountry": "TR"
+    },
+    "telephone": "+905362837519",
+    "sameAs": ["https://www.instagram.com/kuafor_tuncerdurmus/"],
+    "openingHours": [
+      "Mo 09:30-21:30",
+      "Tu 09:30-21:30",
+      "We 09:30-21:30",
+      "Th 09:30-21:30",
+      "Fr 09:30-21:30",
+      "Sa 09:30-22:00",
+      "Su 09:30-19:00"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "26"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <div class="nav-wrap" id="navWrap">
+    <nav>
+      <a class="brand" href="#anasayfa">
+        <span class="brand-mark">t</span>
+        <span class="brand-text">kuaför tuncer<br>bay bayan gebetto</span>
+      </a>
+      <div class="nav-links">
+        <a href="#hizmetler">hizmetler</a>
+        <a href="#galeri">galeri</a>
+        <a href="#sss">sss</a>
+        <a href="#iletisim">iletişim</a>
+      </div>
+      <a class="nav-cta" href="tel:+905362837519">hemen ara</a>
+    </nav>
+  </div>
+
+  <header class="hero" id="anasayfa">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy reveal visible">
+        <span class="eyebrow">konya selçuklu premium salon</span>
+        <h1>güçlü çizgi temiz görünüm net stil</h1>
+        <p>
+          KUAFÖR TUNCER Bay Bayan Gebetto Tasarım kadın ve erkek bakımını tek çatı altında daha modern daha güçlü daha düzenli bir marka hissiyle sunar
+          saç boyama ve kuaförlük merkezde kalırken site yapısı ziyaretçiyi direkt iletişime götürür
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/905362837519?text=merhaba%20kuaf%C3%B6r%20tuncer%20i%C3%A7in%20randevu%20olu%C5%9Fturmak%20istiyorum">whatsapp randevu</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/kuafor_tuncerdurmus/" target="_blank" rel="noopener">instagram gör</a>
+        </div>
+        <div class="stats">
+          <div class="stat reveal delay-1 visible"><strong>5 0</strong><span>puan ortalaması</span></div>
+          <div class="stat reveal delay-2 visible"><strong>26</strong><span>değerlendirme</span></div>
+          <div class="stat reveal delay-3 visible"><strong>7 gün</strong><span>aktif çalışma düzeni</span></div>
+        </div>
+      </div>
+
+      <div class="hero-frame reveal delay-2 visible">
+        <div class="hero-main-visual"></div>
+        <div class="top-note">
+          <strong>uzun saatler açık</strong>
+          <span>gün boyu hatta akşama kadar hizmet arayan kitle için güçlü avantaj</span>
+        </div>
+        <div class="hero-bottom">
+          <div class="pill-row">
+            <span class="pill">bay bayan hizmet</span>
+            <span class="pill">saç boyama</span>
+            <span class="pill">modern bakım</span>
+            <span class="pill">selçuklu konya</span>
+          </div>
+          <div class="card" style="padding:18px 20px;border-radius:24px;background:rgba(255,255,255,.04)">
+            <div class="kicker" style="margin-bottom:8px">çalışma saatleri</div>
+            <p style="margin:0;line-height:1.95;color:#fff">
+              pazartesi 09 30 21 30<br>
+              salı 09 30 21 30<br>
+              çarşamba 09 30 21 30<br>
+              perşembe 09 30 21 30<br>
+              cuma 09 30 21 30<br>
+              cumartesi 09 30 22 00<br>
+              pazar 09 30 19 00
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="rgba(255,255,255,.04)" d="M0,48L72,58.7C144,69,288,91,432,96C576,101,720,91,864,74.7C1008,59,1152,37,1296,32C1368,27,1404,29,1422,30.7L1440,32L1440,120L1422,120C1404,120,1368,120,1296,120C1152,120,1008,120,864,120C720,120,576,120,432,120C288,120,144,120,72,120L0,120Z"></path>
+    </svg>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">güven katmanı</div>
+          <h2>ilk izlenimde profesyonel netlik</h2>
+        </div>
+        <p>bay ve bayan hedef kitleyi aynı anda taşıyan salonlarda düzen hissi güven ve hız çok kritik bu site yapısı tam onu satıyor</p>
+      </div>
+      <div class="trust-grid">
+        <div class="card reveal delay-1"><div class="icon">✦</div><h3>tam puan etkisi</h3><p>5 0 puan ortalaması ilk bakışta kalite algısını yükseltir ve kararsızlığı azaltır</p></div>
+        <div class="card reveal delay-2"><div class="icon">◌</div><h3>bay bayan yapı</h3><p>daha geniş müşteri profiline hitap eden güçlü salon pozisyonu oluşturur</p></div>
+        <div class="card reveal delay-3"><div class="icon">⌛</div><h3>uzun açık kalış</h3><p>akşam saatlerine kadar hizmet vermesi yoğun müşteriyi bile yakalama şansı sağlar</p></div>
+        <div class="card reveal delay-4"><div class="icon">◎</div><h3>instagram desteği</h3><p>sosyal medya bağlantısı ziyaretçinin salona dair daha fazla güven duymasını sağlar</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">before after</div>
+          <h2>ziyaretçiyi müşteriye çeviren akış</h2>
+        </div>
+        <p>sayfaya giren kişi uzun uzun düşünmesin diye karar süreci sade ama premium şekilde tasarlandı</p>
+      </div>
+      <div class="split-grid">
+        <div class="split-box reveal delay-1">
+          <span class="label">önce</span>
+          <h3 class="serif" style="font-size:2.2rem;margin:0">karışık algı</h3>
+          <div class="line"></div>
+          <ul>
+            <li>bay bayan salon olduğu için hizmet kapsamını merak eder</li>
+            <li>puan yüksek ama tarzı görmek ister</li>
+            <li>telefon mu whatsapp mı instagram mı kararsız kalabilir</li>
+            <li>adres ve saatleri tek yerde görmek ister</li>
+          </ul>
+        </div>
+        <div class="split-box reveal delay-2">
+          <span class="label">sonra</span>
+          <h3 class="serif" style="font-size:2.2rem;margin:0">net randevu niyeti</h3>
+          <div class="line"></div>
+          <ul>
+            <li>hizmetleri düzenli başlıklarla görür</li>
+            <li>çalışma saatleri ve konumu hızlıca anlar</li>
+            <li>sabit whatsapp ve ara butonuyla beklemeden temas kurar</li>
+            <li>premium görünüm sayesinde salonun değerini yüksek hisseder</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hizmetler">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">hizmetler</div>
+          <h2>sadece iki başlık değil tam salon hissi</h2>
+        </div>
+        <p>sen ek hizmet isteyince hizmet alanını büyüttüm böylece sayfa daha dolu daha satış odaklı daha profesyonel akıyor</p>
+      </div>
+      <div class="services-grid">
+        <article class="card reveal delay-1"><div class="service-top"><span class="service-tag">renk</span><span>01</span></div><h3>saç boyama</h3><p>temel hizmetlerden biri olarak renk tazeleme ve görünüm yenileme odaklı ana alan</p></article>
+        <article class="card reveal delay-2"><div class="service-top"><span class="service-tag">kesim</span><span>02</span></div><h3>kesim ve şekillendirme</h3><p>yüz tipine ve stile göre daha temiz daha modern bir görünüm için düzenli dokunuşlar</p></article>
+        <article class="card reveal delay-3"><div class="service-top"><span class="service-tag">bakım</span><span>03</span></div><h3>saç bakım uygulamaları</h3><p>yıpranmış mat ya da hacimsiz saç görünümünü toparlayan destekleyici işlemler</p></article>
+        <article class="card reveal delay-4"><div class="service-top"><span class="service-tag">stil</span><span>04</span></div><h3>fön ve günlük hazırlık</h3><p>günlük şıklık ya da hızlı hazırlık için düzenli salon çıkışı görünümü sağlayan hizmet</p></article>
+        <article class="card reveal delay-1"><div class="service-top"><span class="service-tag">erkek</span><span>05</span></div><h3>erkek bakım ve saç düzenleme</h3><p>erkek müşteriler için daha temiz ve güçlü stil vurgusunu öne çıkaran bakım çizgisi</p></article>
+        <article class="card reveal delay-2"><div class="service-top"><span class="service-tag">kadın</span><span>06</span></div><h3>kadın kuaförlük hizmetleri</h3><p>renk bakım ve şekillendirme tarafında zarif görünüm isteyen müşterilere yönelik yapı</p></article>
+        <article class="card reveal delay-3"><div class="service-top"><span class="service-tag">özel gün</span><span>07</span></div><h3>özel gün hazırlığı</h3><p>davet nişan ya da kutlama gibi günlerde daha özenli görünüm isteyenler için destekleyici salon hizmeti</p></article>
+        <article class="card reveal delay-4"><div class="service-top"><span class="service-tag">dokunuş</span><span>08</span></div><h3>kuaförlük genel hizmetleri</h3><p>salonun ana uzmanlık alanını tek başlıkta toplayan daha geniş hizmet çatısı</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">yorumlar</div>
+          <h2>sayısal veriyle güveni çak</h2>
+        </div>
+        <p>gerçek yorum metni verilmediği için uydurma yapmadan sadece puan ve değerlendirme gücünü öne çıkaran yorum alanı kuruldu</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="card reveal delay-1"><div class="quote">“</div><p>26 değerlendirme ile gelen tam puan ziyaretçi için salonu güvenli seçim gibi gösterir</p><div class="reviewer">26 değerlendirme</div></div>
+        <div class="card reveal delay-2"><div class="quote">“</div><p>bay bayan hizmet yapısı salonu daha kapsamlı ve güçlü işletme gibi konumlandırır</p><div class="reviewer">geniş hedef kitle</div></div>
+        <div class="card reveal delay-3"><div class="quote">“</div><p>instagram ve telefon geçişlerinin birlikte verilmesi dönüşüm ihtimalini yükseltir</p><div class="reviewer">hızlı iletişim</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">galeri</div>
+          <h2>daha premium daha sert daha stil sahibi</h2>
+        </div>
+        <p>bu işletmede daha maskülen ve güçlü görsel dil kullandım kadın kuaför sitelerinden farklı his vermesi için yapı bilinçli değiştirildi</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal delay-1" data-label="color work"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80" alt="saç boyama görünümü" /></div>
+        <div class="gallery-item reveal delay-2" data-label="clean cut"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=80" alt="erkek bakım görünümü" /></div>
+        <div class="gallery-item reveal delay-3" data-label="premium detail"><img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=900&q=80" alt="salon detay görünümü" /></div>
+        <div class="gallery-item reveal delay-4" data-label="modern salon"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1400&q=80" alt="modern kuaför alanı" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta reveal">
+        <div class="kicker">güçlü cta</div>
+        <h2>stiline hızlı dön yeni görünümünü bekletme</h2>
+        <p>telefonla direkt ulaşabilir whatsapptan yazabilir ya da instagram üzerinden salonu inceleyip güvenini büyütebilirsin amaç tek karar noktası oluşturmak</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://wa.me/905362837519?text=merhaba%20kuaf%C3%B6r%20tuncer%20i%C3%A7in%20randevu%20almak%20istiyorum">whatsapptan yaz</a>
+          <a class="btn btn-outline" href="tel:+905362837519">telefonla ara</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/kuafor_tuncerdurmus/" target="_blank" rel="noopener">instagram aç</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sss">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">sss</div>
+          <h2>sormadan cevabı görsün</h2>
+        </div>
+        <p>ziyaretçinin hızlı karar vermesi için temel sorular kısa ve net şekilde yerleştirildi</p>
+      </div>
+      <div class="faq-grid">
+        <div class="card reveal delay-1"><h3>hafta sonu açık mı</h3><p>evet cumartesi 22 00 ye kadar pazar ise 19 00 a kadar açık görünüyor</p></div>
+        <div class="card reveal delay-2"><h3>instagram hesabı var mı</h3><p>evet salonun instagram bağlantısı siteye eklendi ziyaretçi tek dokunuşla geçebilir</p></div>
+        <div class="card reveal delay-3"><h3>hangi kitleye hitap ediyor</h3><p>bay ve bayan ibaresi sayesinde daha geniş müşteri kitlesine hitap eden yapı öne çıkıyor</p></div>
+        <div class="card reveal delay-4"><h3>randevu için en hızlı yol ne</h3><p>whatsapp butonu en hızlı geçişi sağlar ama direkt arama seçeneği de sabit tutuldu</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="iletisim">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">iletişim</div>
+          <h2>adres saat telefon tek yerde</h2>
+        </div>
+        <p>müşteri aramadan önce ihtiyaç duyduğu her şeyi tek sayfada görsün diye iletişim katmanı sade ama güçlü kuruldu</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card reveal delay-1">
+          <h3 class="serif" style="font-size:2rem;margin:0 0 8px">KUAFÖR TUNCER Bay Bayan Gebetto Tasarım</h3>
+          <p style="margin:0;color:var(--muted);line-height:1.8">feritpaşa selçuklu konumunda bay ve bayan müşterilere hitap eden premium salon vitrin sayfası</p>
+          <div class="contact-list">
+            <div class="contact-row"><div class="icon" style="margin:0">⌂</div><div><strong>adres</strong><div style="color:var(--muted);margin-top:5px">Feritpaşa Y Müh Ümit Bahadır Türk Sk 42060 Selçuklu Konya</div></div></div>
+            <div class="contact-row"><div class="icon" style="margin:0">✆</div><div><strong>telefon</strong><div style="color:var(--muted);margin-top:5px"><a href="tel:+905362837519">0536 283 75 19</a></div></div></div>
+            <div class="contact-row"><div class="icon" style="margin:0">◎</div><div><strong>instagram</strong><div style="color:var(--muted);margin-top:5px"><a href="https://www.instagram.com/kuafor_tuncerdurmus/" target="_blank" rel="noopener">@kuafor_tuncerdurmus</a></div></div></div>
+            <div class="contact-row"><div class="icon" style="margin:0">⏱</div><div><strong>çalışma saatleri</strong><div style="color:var(--muted);margin-top:5px">hafta içi 09 30 21 30 cumartesi 09 30 22 00 pazar 09 30 19 00</div></div></div>
+          </div>
+          <div class="cta-actions" style="margin-top:24px">
+            <a class="btn btn-primary" href="https://wa.me/905362837519?text=merhaba%20randevu%20almak%20istiyorum">randevu al</a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Feritpaşa%20Y.%20Müh.%20Ümit%20Bahadır%20Türk%20Sk.%2042060%20Selçuklu%20Konya">yol tarifi al</a>
+          </div>
+        </div>
+        <div class="map-wrap reveal delay-2">
+          <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Feritpaşa%20Y.%20Müh.%20Ümit%20Bahadır%20Türk%20Sk.%2042060%20Selçuklu%20Konya&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-box">
+      <div>
+        <div style="letter-spacing:.28em;text-transform:uppercase;font-size:.78rem;color:#fff">kuaför tuncer bay bayan gebetto tasarım</div>
+        <div style="margin-top:8px">konya selçuklu için hazırlanmış tek html premium salon tanıtım sitesi</div>
+      </div>
+      <div>telefon 0536 283 75 19</div>
+    </div>
+  </footer>
+
+  <div class="floating-actions">
+    <a class="fab" href="https://wa.me/905362837519?text=merhaba%20kuaf%C3%B6r%20tuncer%20i%C3%A7in%20randevu%20olu%C5%9Fturmak%20istiyorum" aria-label="whatsapp"><span>✆</span><strong>whatsapp</strong></a>
+    <a class="fab" href="tel:+905362837519" aria-label="ara"><span>☎</span><strong>ara</strong></a>
+  </div>
+
+  <script>
+    const progress = document.getElementById('progress');
+    const navWrap = document.getElementById('navWrap');
+    const heroBg = document.getElementById('heroBg');
+    let lastY = window.scrollY;
+
+    function onScroll(){
+      const y = window.scrollY;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = (max > 0 ? y / max * 100 : 0) + '%';
+      if(y > lastY && y > 120) navWrap.classList.add('nav-hidden');
+      else navWrap.classList.remove('nav-hidden');
+      lastY = y;
+      heroBg.style.transform = window.innerWidth > 900 ? `translateY(${y * 0.18}px)` : 'translateY(0px)';
+    }
+
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold:.14 });
+
+    document.querySelectorAll('.reveal').forEach(el=>{ if(!el.classList.contains('visible')) io.observe(el); });
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+  </script>
+</body>
+</html>
